@@ -1,0 +1,1283 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --LightGreen:#52D681;
+    --VeryLightgray:#f0f0f0;
+    --LightOrage:#f76b14;
+    --mainFont: "Luckiest Guy", cursive;
+    --secondaryFont:"Roboto", sans-serif;
+}
+
+
+
+/* repeated header */
+section .content .booking .vacation h2 ,section .content .about .data h2 ,section .content .services h2 ,
+section .content .why .data h2 ,section .content .pricing h2, section .content .team h2, section .content .ourclients h2 ,section .content .blog h2{
+    color: var(--LightOrage);
+    font-family: var(--mainFont);
+    font-size: 40px;
+    font-weight: bold;
+    margin:3% 0;
+    text-transform: capitalize;
+}
+
+section .content .booking .vacation h2 span, section .content .about .data h2 span ,section .content .services h2 span,
+ section .content .why .data h2 span ,section .content .pricing h2 span ,section .content .team h2 span,
+  section .content .ourclients h2 span,section .content .blog h2 span{
+    color: black;
+}
+
+section .content .about .data h3 ,section .content .services h3 ,section .content .why .data h3
+  ,section .content .pricing h3,section .content .team h3 ,section .content .ourclients h3,section .content .blog h3 {
+    color: var(--LightGreen);
+    font-family: var(--mainFont);
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 1vh 0;
+ }
+
+
+
+/* main container */
+section{
+    width: 100%;
+    background-color: white;
+}
+
+
+section .back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color:var(--LightOrage);
+  color: white;
+  padding: 10px 10px;
+  border-radius: 15%;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  z-index: 1000;
+
+  
+}
+
+section .back-to-top  i{
+    animation: scaleUpDown 1.5s infinite ease-in-out;
+}
+
+/* header */
+section header{
+    width: 100%;
+    display: flex;
+    background-color: var(--LightGreen);
+}
+ 
+.left{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.right{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+section header ul{
+    display: flex;
+    margin: 0 10%;
+    list-style: none;
+    justify-content:flex-end;
+    gap: 40px;
+    align-items: center;
+}
+
+section header ul li a {
+    text-decoration: none;
+    font-family: var(--secondaryFont);
+    color: white;
+    
+
+}
+
+section header .line{
+    width: 1px;
+    height: 30px;
+    margin: 10px 20% 10px 0%;
+    background-color: white;
+}
+
+section header i ,section .content .banner .icon i{
+    color: white;
+    animation: glow 1s infinite;
+}
+
+ @keyframes glow {
+      0%, 100% {
+        color: white;
+      }
+      50% {
+        color: rgb(189, 199, 192);
+      }
+    }
+
+
+/* start of the content */
+/* 1-the petlover */
+section .content .petlover{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+section .content .petlover h2{
+    font-family: var(--mainFont);
+    color:  black;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 2vh 3%;
+}
+
+section .content .petlover h2 span{
+    color: var(--LightOrage);
+}
+
+section .content .petlover .leftdata{
+    width: 70%;
+    margin: 2vh 3%;
+    font-family: var(--mainFont);
+    display: flex;
+    gap: 2%;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+section .content .petlover .leftdata .data{
+    text-align: center;
+}
+
+section .content .petlover .leftdata .data h4{
+    font-size: 20px;
+    font-weight: bold;
+     font-family: var(--mainFont);
+}
+
+section .content .petlover .leftdata .line{
+    width: 2px;
+    height: 30px;
+    background-color:var(--VeryLightgray);
+}
+
+
+
+/* 2- header2 */
+section .content .header2{
+    width: 100%;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+}
+
+section .content .header2 ul{
+    width: 70%;
+    display: flex;
+    margin: 0 5%;
+    list-style: none;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+section .content .header2 ul li{
+    padding:3% 2%;
+}
+
+section .content .header2 ul li select{
+    width: 70px;
+    background-color: black;
+    font-family: var(--mainFont);
+    text-transform: capitalize;
+     font-size: 17px;
+     font-weight: bold;
+    border: none;
+    color: white;
+}
+section .content .header2 ul li a {
+    text-decoration: none;
+    font-family: var(--mainFont);
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 20px 0;
+    
+}
+
+section .content .header2 ul li:hover,section .content .header2 ul li:hover select{
+    background-color: var(--LightOrage);
+}
+
+section .content .header2 button{
+    background-color: var(--LightOrage);
+    color: white;
+    margin: 1% 5%;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: var(--mainFont);
+    width: 100px;
+    padding:  2px 0;
+}
+
+section .content .header2 ul .active{
+    background-color: var(--LightOrage);
+}
+
+
+
+/* 3-banner */
+section .content .banner{
+    background-image: url(../images/carousel-1.jpg);
+    background-size: 100% 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section .content .banner .icon{
+    width: 30px;
+    height: 3vh;
+    padding-top: 3px;
+    border-radius: 2px;
+    text-align: center;
+    background-color: var(--LightOrage);
+}
+
+section .content .banner .centerdata{
+    text-align: center;
+    font-family: var(--mainFont);
+    color: white;
+    margin: 8% 0 6%;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+section .content .banner .centerdata h1 {
+    font-size: 45px;
+}
+
+section .content .banner .centerdata h3{
+    font-size: 30px;
+}
+
+section .content .banner .centerdata h1 ,section .content .banner .centerdata p{
+    margin: 4vh 0;
+    font-weight: bold;
+
+}
+
+section .content .banner .centerdata .twobutton button{
+    background-color: var(--LightOrage);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 5px;
+    border: none;
+    text-transform: capitalize;
+    font-family: var(--mainFont);
+    margin: 2vh 3%;
+    width: 28%;
+}
+
+section .content .banner .centerdata .twobutton .green{
+    background-color: var(--LightGreen);
+}
+section .content .banner .centerdata .twobutton button:hover{
+    color: black;
+}
+
+
+
+/* 4- Booking */
+section .content .booking{
+    width: 100%;
+    background-color: var(--VeryLightgray);
+    display: flex; 
+}
+
+section .content .booking .form{
+    width: 50%;
+    display: flex;
+}
+
+section .content .booking .form form{
+width: 60%;
+margin: 0 15%;
+background-color: var(--LightOrage);
+}
+
+section .content .booking .form form input ,section .content .booking .form form select {
+    width: 80%;
+    margin: 2vh 8%;
+    padding: 2%;
+    border-radius: 5px;
+    font-family: var(--mainFont);
+    text-transform: capitalize;
+}
+
+section .content .booking .form form .user{
+    margin-top: 4vh;
+}
+
+section .content .booking .form form .submit{
+    background-color: black;
+    color: white;
+    margin-bottom: 5%;
+}
+
+
+section .content .booking .vacation{
+    width: 50%;
+    margin-right: 5%;
+    font-family: var(--mainFont);
+    text-transform: capitalize;
+}
+
+section .content .booking .vacation h3{
+    color: var(--LightGreen);
+    font-size: 20px;
+    margin-top: 4% ;
+}
+ 
+section .content .booking .vacation .services{
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section .content .booking .vacation  p{
+    font-family: var(--secondaryFont);
+    margin: 3% 0;
+    color: gray;
+}
+
+section .content .booking .vacation .services .srv{
+    width: 50%;
+    margin: 3%  0;
+}
+
+section .content .booking .vacation .services .srv h4{
+    display: inline;
+    font-size: 18px;
+}
+
+section .content .booking .vacation .services .srv i{
+    color: var(--LightGreen);
+    font-size: 25px;
+    animation: scaleUpDown 1.5s infinite ease-in-out;
+
+}
+
+ @keyframes scaleUpDown {
+   0%, 100% {
+     transform: scale(1);
+    }
+   50% {
+        transform: scale(1.2);
+    }
+ }
+
+
+
+/* 5-about  */
+section .content .about{
+width: 100%;
+display: flex;
+justify-content: space-evenly;
+}
+
+section .content .about .data{
+width: 55%;
+margin: 5% 0;
+padding: 0 7%;
+}
+
+section .content .about .data p{
+font-family: var(--mainFont);
+margin: 1vh 0;
+color: gray;
+}
+
+section .content .about .data p span{
+font-weight: bold;
+color: black;
+}
+
+section .content .about .data i{
+color: var(--LightGreen);
+}
+
+section .content .about .data .threediv{
+display: flex;
+margin: 2vh 0;
+}
+
+section .content .about .data .threediv h4{
+text-transform: capitalize;
+font-weight: bold;
+}
+
+section .content .about .data button{
+width: 150px;
+padding: 1vh 2%;
+border: none;
+background-color: var(--LightOrage);
+color: black;
+border-radius: 5px;
+}
+
+section .content .about .image{
+width: 45%;
+}
+
+section .content .about .image img{
+width: 55%;
+height: 40%;
+margin-top: 18vh;
+}
+
+section .content .about .image .twoimg{
+width: 60%;
+padding: 0;
+display: flex;
+}
+
+section .content .about .image .twoimg .image{
+width: 46%;
+margin-top: 0;
+}
+
+
+
+ /* 6-services */
+section .content .services{
+    width: 100%;
+    background-color: var(--VeryLightgray);
+    text-align: center;
+    padding: 5vh;
+}
+
+section .content .services .sixservices{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 4%;
+}
+
+section .content .services .sixservices .eachservice{
+    /* width: 31%; */
+    background-color: white;
+    width: 400px;
+    margin: 2vh 1%;
+    padding: 1.5%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(175, 235, 175);
+}
+
+section .content .services .sixservices .eachservice i {
+    color: var(--LightGreen);
+    font-size: 30px;
+}
+
+section .content .services .sixservices .eachservice h3 ,section .content .why .data .dataicon .icon h3 {
+    color: black;
+    font-family: var(--mainFont);
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+section .content .services .sixservices .eachservice p ,section .content .why .data p{
+    color: gray;
+    font-family: var(--mainFont);
+}
+
+section .content .services .sixservices .eachservice button{
+    background-color:transparent ;
+    color: var(--LightOrage);
+    font-family: var(--mainFont);
+    border: none;
+    margin: 3% 0;
+    font-size: 16px;
+}
+
+
+
+/* 7-why */
+section .content .why{
+    width: 100%;
+    display: flex;
+    
+}
+
+section .content .why img{
+    width: 25%;
+    margin-left: 15%;
+}
+
+section .content .why .data{
+    width: 50%;
+    margin: 5% 10%;
+    
+}
+
+section .content .why .data .dataicon{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section .content .why .data .dataicon .icon{
+    width: 50%;
+    display: flex;
+    margin: 2vh 0;
+}
+
+section .content .why .data .dataicon .icon i{
+    color: var(--LightGreen);
+    font-size: 30px;
+}
+
+
+
+/* 8-pricing */
+section .content .pricing{
+    width: 100%;
+    padding: 3% ;
+    font-size: 18px;
+    text-align: center;
+    font-family: var(--mainFont);
+    text-transform: capitalize;
+    background-color: var(--VeryLightgray);
+}
+
+section .content .pricing .chooses {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 7%;
+}
+
+section .content .pricing .chooses .eachchoose{
+    background-color: white;
+    width: 375px;
+    margin: 2vh 1%;
+    border-radius: 5px;
+    
+}
+
+section .content .pricing .chooses .eachchoose .img  {
+    width: 100%;
+    height: 200px;
+    padding-top: 10%;
+    margin-bottom: 5%;
+    color: white;
+    font-weight: bold;
+    background-image: url(../images/price-1.jpg);
+    background-size: 100% 100%;
+}
+
+section .content .pricing .chooses .eachchoose #two{
+    background-image: url(../images/price-2.jpg);
+}
+
+section .content .pricing .chooses .eachchoose #three{
+    background-image: url(../images/price-3.jpg);
+    background-color: #dedddd85;
+}
+
+section .content .pricing .chooses .eachchoose .img h3{
+    color: white;
+    margin-top: 0;
+    font-size: 40px;
+}
+
+section .content .pricing .chooses .eachchoose .img h4 {
+    color: var(--LightOrage);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+section .content .pricing .chooses .eachchoose p{
+    margin: 3% 0;
+} 
+
+section .content .pricing .chooses .eachchoose button{
+    width: 100%;
+    padding: 3%;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: var(--mainFont);
+    text-transform: capitalize;
+    background-color: var(--LightOrage);
+}
+
+section .content .pricing .chooses #green button{
+    background-color: var(--LightGreen);
+}
+
+section .content .pricing .chooses #green h4{
+    color: var(--LightGreen);
+}
+
+section .content .pricing .chooses .eachchoose .fa-check{
+    color: var(--LightGreen);
+}
+
+section .content .pricing .chooses .eachchoose .fa-xmark{
+    color: red;
+}
+
+
+/* 9-team member */
+section .content .team {
+    width: 100%;
+    text-align: center;
+    font-family: var(--secondaryFont);
+    text-transform: capitalize;
+    padding: 3%;
+   
+}
+
+section .content .teammembers{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1% 10%;
+}
+
+section .content .team .teammembers .eachmember{
+    width: 250px;
+    background-color: var(--VeryLightgray);
+    text-align: center;
+    border-radius: 5px;
+    margin: 2% 0;
+    position: relative;
+}
+
+section .content .team .teammembers .eachmember img{
+    width: 100%;
+    height: 220px;
+    border-radius: 5px 5px 0 0;
+}
+
+section .content .team .teammembers .eachmember .showed{
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    background-color: var(--VeryLightgray);
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    transition: 1s;
+   
+}
+
+section .content .team .teammembers .eachmember .hidden{
+   padding: 3%;
+   width: 100%; 
+   border-radius: 0 0 5px 5px;
+   background-color: black;
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   bottom: 0;
+   z-index: 1;
+}
+
+section .content .team .teammembers .eachmember .box:hover .showed{
+    transform: rotateX(90deg);
+}
+
+section .content .team .teammembers .eachmember .hidden .circle {
+    width: 30px;
+    height: 30px;
+    margin: 3px 3px;
+    color: var(--LightOrage);
+    padding: 2% 0;
+    border: 1px solid var(--LightOrage);
+    border-radius: 50%;
+    text-align: center;
+    background-color: transparent;
+ }
+
+section .content .team .teammembers .eachmember .hidden .circle:hover{
+    background-color: var(--LightOrage);
+    color: white;
+}
+
+section .content .team .teammembers .eachmember h4{
+    margin: 3%;
+    font-weight: bold;
+    font-family: var(--mainFont);
+}
+
+
+/* 10-our clients */
+section .content .ourclients{
+    width: 100%;
+    text-align: center;
+    font-family: var(--mainFont);
+    text-transform: capitalize;
+    padding: 4%;
+    background-color: var(--VeryLightgray);
+    position: relative;
+}
+
+section .content .ourclients .clientfeedback{
+    width: 90%;
+    margin: 2% 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section .content .ourclients .clientfeedback .eachclient{
+    width: 300px;
+    margin: 2% 0;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgb(175, 235, 175);
+}
+
+section .content .ourclients .clientfeedback .eachclient .client{
+    display: flex;
+}
+
+section .content .ourclients .clientfeedback .eachclient .client img{
+    width: 100px;
+    height: 90px;
+}
+
+section .content .ourclients .clientfeedback .eachclient .client .data{
+    margin: 6%;
+}
+
+section .content .ourclients .clientfeedback .eachclient  p{
+    font-family: var(--secondaryFont);
+    color: gray;
+    margin: 1%;
+}
+
+section .content .ourclients .circles-container {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 15px;
+}
+
+section .content .ourclients .circle {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color:var(--LightGreen);
+}
+
+
+/* 11-blog */
+section .content .blog {
+    width: 100%;
+    text-align: center;
+    font-family: var(--secondaryFont);
+    text-transform: capitalize;
+    padding: 3%;
+}
+
+section .content .blog .updates {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 7%;
+}
+
+section .content .blog .updates .eachupdate{
+    background-color: var(--VeryLightgray);
+    width: 375px;
+    margin: 2vh 1%;  
+    border-radius: 10px;
+     box-shadow: 0 0 5px var(--LightGreen);
+    
+}
+
+section .content .blog .updates .eachupdate img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px 10px 0 0 ;
+    
+}
+
+section .content .blog .updates .eachupdate h3{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--mainFont);
+}
+
+section .content .blog .updates .eachupdate .picon{
+    width: 66%;
+    margin: 0 17%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section .content .blog .updates .eachupdate p{
+    color: gray;
+    font-family: var(--mainFont);
+    text-transform: capitalize;
+    margin: 2% 0;
+}
+
+section .content .blog .updates .eachupdate button{
+    border: none;
+    margin: 2% 0;
+    font-size: 20px;
+    color: var(--LightOrage);
+    font-family: var(--mainFont);
+    text-transform: capitalize;
+}
+
+
+/* start footer */
+section footer {
+    width: 100%;
+    padding: 2% 0 0 0;
+    background-color: rgb(31, 30, 30);
+    font-family: var(--mainFont);
+}
+
+section footer .container-column{
+    width: 90%;
+    display: flex;
+    margin: 0 6% 6% 6%;
+    justify-content: space-around;
+    color: white;
+    flex-wrap: wrap;
+}
+
+section footer .container-column .column{
+    width: 250px;
+}
+
+section footer .container-column #link{
+    width: 140px;
+}
+
+section footer .container-column #big{
+    width: 450px;
+    padding: 5px 2%;
+}
+
+section footer .container-column .column h3{
+    color: var(--LightOrage);
+    margin: 8px 0;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+section footer .container-column .column p{
+    margin: 13px 0;
+    font-weight: bold;
+    
+}
+
+section footer .container-column #big h2{
+    color: white;
+    margin: 5px 0;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+section footer .container-column .column .icon{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+
+section footer .container-column .column .icon .circle{
+    width: 30px;
+    height: 30px;
+    margin: 3px 0;
+    padding: 2px 0;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+section footer .container-column #big h2 span{
+    color: var(--LightOrage);
+}
+section footer .container-column #big p{
+    font-family: var(--secondaryFont);
+}
+
+section footer .container-column .column ul{
+    list-style: none;
+   
+}
+
+section footer .container-column .column ul li::before{
+    content: ">";
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+section footer .container-column .column ul li a{
+    text-decoration: none;
+    font-family: var(--mainFont);
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    
+}
+
+section footer .container-column form input{
+  width: 70%;
+  margin: 3% 0;
+  padding: 2% 2%;
+  border-radius: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: var(--mainFont);
+  background-color: white;
+}
+
+section footer .container-column form .submit{
+    background-color: var(--LightOrage);
+    color: white;
+}
+
+
+section footer .copyright{
+    width: 100%;
+    display: flex;
+    padding: 2% 5%;
+    justify-content: space-between;
+    background-color: black;
+}
+
+section footer .copyright p{
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+
+section footer .copyright .right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+section footer .copyright .right ul{
+    display: flex;
+    margin: 0 10%;
+    list-style: none;
+    justify-content:flex-end;
+    gap: 30px;
+    align-items: center;
+}
+
+section footer .copyright .right ul li a {
+    text-decoration: none;
+    font-family: var(--mainFont);
+    color: white;
+    text-transform: capitalize;
+    
+
+}
+
+
+
+/* media quary */
+
+@media (max-width:700px) {
+
+    /* 2- header2 */
+section .content .header2 ul{
+    width: 85%;
+    margin: 0 5px;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+section .content .header2 ul li{
+    padding:3% 2px;
+    width: 25%;
+}
+
+section .content .header2 ul li select{
+    width: 65px;
+    font-size: 16px;
+    font-weight:normal;
+}
+section .content .header2 ul li a {
+    font-size: 16px;
+}
+
+section .content .header2 button{
+    margin: 5% 5px;
+    height: 40px;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+
+
+/* footer */
+
+
+section footer .copyright{
+    height: 100px;
+    position: relative;
+    justify-content: space-around;
+}
+
+section footer .copyright p{
+    position: absolute;
+    font-weight: normal;
+    bottom: 10px; 
+    font-size: 14px;
+}
+
+section footer .copyright .right{
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    bottom: 50px;
+}
+
+section .container-column{
+    margin: 10px;
+}
+
+section footer .container-column .column{
+    width: 200px;
+}
+
+section footer .container-column #link{
+    width: 200px;
+}
+
+section footer .container-column #big{
+    width: 300px;
+    padding: 5px 2%; 
+}
+
+
+}
+
+@media (max-width:650px) {
+
+   section header{
+     flex-wrap: wrap;
+   }
+   section header .left{
+    width: 100%;
+    justify-content: space-around;
+   }
+   section header .right{
+    width: 100%;
+    margin: 10px 0;
+    justify-content: space-around;
+   }
+
+
+    /* 1-the petlover */
+    section .content .petlover{
+       flex-wrap: wrap;
+       justify-content: space-around;
+    }
+
+    section .content .petlover h2{
+        margin: 1vh 0;
+    }
+
+    section .content .petlover .leftdata{
+        width: 100%;
+         margin: 2vh 0;
+        justify-content:space-around;
+    }
+
+    section .content .petlover .leftdata .data h4{
+        font-size: 16px;
+    }
+
+    section .content .petlover .leftdata .data p{
+        font-size: 14px;
+    }
+
+    section .content .petlover .leftdata .line{
+        width: 1px;
+    } 
+
+   
+    /* 3-banner */
+section .content .banner{
+    justify-content: space-evenly;
+}
+
+section .content .banner .centerdata h1 {
+    font-size: 30px;
+}
+
+section .content .banner .centerdata h3{
+    font-size: 20px;
+}
+
+section .content .banner .centerdata h1 ,section .content .banner .centerdata p{
+    font-weight: normal;
+}
+
+section .content .banner .centerdata .twobutton button{
+    font-size: 14px;
+    padding: 5px 3px;
+}
+
+/* 4- Booking */
+section .content .booking{
+    flex-wrap: wrap;
+}
+
+section .content .booking .form{
+    width: 100%;
+}
+
+section .content .booking .form form{
+    width: 70%;
+}
+
+section .content .booking .vacation{
+    width: 100%;
+    text-align: center; 
+}
+ 
+section .content .booking .vacation .services{
+    justify-content: space-around;
+}
+
+section .content .booking .vacation .services .srv{
+    width: 45%;
+    margin: 3%  3px;
+}
+
+section .content .booking .vacation .services .srv h4{
+    font-size: 16px;
+}
+
+section .content .booking .vacation .services .srv i{
+    font-size: 20px;
+}
+
+
+/* 5-about  */
+section .content .about{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section .content .about .data{
+    text-align: center;
+    width: 100%;
+}
+
+section .content .about .data p{
+color: gray;
+}
+
+section .content .about .data .threediv{
+   justify-content: center;
+}
+
+section .content .about .image{
+width: 100%;
+margin-bottom: 2vh;
+}
+
+section .content .about .image img{
+width: 100%;
+height: 200px;
+margin-top: 2vh;
+}
+
+section .content .about .image .twoimg{
+width: 100%;
+}
+
+section .content .about .image .twoimg .image{
+width: 50%;
+height: 100px;
+}
+
+
+/* why */
+section .content .why{
+    flex-wrap: wrap;
+}
+
+section .content .why img{
+    width: 100%;
+    height: 250px;
+    margin: 0;
+}
+
+section .content .why .data{
+    width: 100%;
+    text-align: center;
+    margin: 0 ;
+}
+
+section .content .why .data .dataicon .icon{
+    padding: 5px;
+}
+
+section .content .why .data .dataicon .icon h3{
+    font-size: 18px;
+}
+
+section .content .why .data .dataicon .icon i{
+    font-size: 20px;
+}
+
+
+/* repeated header */
+section .content .booking .vacation h2 ,section .content .about .data h2 ,section .content .services h2 ,
+section .content .why .data h2 ,section .content .pricing h2, section .content .team h2, section .content .ourclients h2 ,
+section .content .blog h2{
+    font-size: 30px;
+}
+
+section .content .about .data h3 ,section .content .booking .vacation h3,section .content .services h3 ,section .content .why .data h3
+  ,section .content .pricing h3,section .content .team h3 ,section .content .ourclients h3,section .content .blog h3 {
+    font-size: 14px;
+    margin: 1vh 0;
+ }
+
+}
